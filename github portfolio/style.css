@@ -1,0 +1,146 @@
+/*----Styles for all----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.home, .education, .projects, .activities, .contact{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.about-me, .skills, .courses, .achivements{
+    min-height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    color: black;
+}
+
+/*----Styles for home section----*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,255,255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.center-content{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.center-content img{
+    width:20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.center-content p{
+    font-size: 50px;
+}
+.center-content .social-icons{
+    font-size: 250%;
+    display: none;
+}
+.center-content .social-icons a{
+    text-decoration: none;
+    color:white;
+}
+.center-content .social-icons a:hover{
+    font-size: 115%;
+    color: aqua;
+    transition: 0.5s;
+}
+.Menu-Button{
+    display: inline-block;
+    text-decoration: none;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 1%;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.Menu-Button:hover{
+    border: 1px solid aqua;
+    background: aqua;
+    color: black;
+    transition: 1s;
+}
+
+/*----Styles for About me section----*/
+
+/*----Styles for education section----*/
+
+/*----Styles for skills section----*/
+
+/*----Styles for projects----*/
+
+/*----Styles for courses section----*/
+
+/*----Styles for activites section----*/
+
+/*----Styles for achivements section----*/
+
+/*----Styles for contact me section----*/
+
+
+
+/*----Styles for small screens----*/
+
+
+@media(max-width: 700px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .center-content p{
+        font-size: 20px;
+    }
+    .overlay a {
+        padding: 5px;
+        font-size: 20px;
+    }
+}
